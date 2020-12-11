@@ -1,5 +1,6 @@
 Under Construction<br>
-Completion: 60%
+Completion: 60
+
 
 # Computer Vision in Microbiology
 
@@ -82,7 +83,7 @@ Source: https://en.wikipedia.org/wiki/Disk_diffusion_test
  
 
 
-
+* This repo was built using the mighty "fastai nbdev".  For additional information please see below reference section.
 
 
 
