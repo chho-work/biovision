@@ -19,7 +19,7 @@ In this repo, we use Deep Learning and Computer Vision techniques to improve ant
 
 Real Image Sample                                  | Synthetic Image 1                                    | Synthetic Image 2 
 :-------------------------------------------------:|:----------------------------------------------------:|:----------------------------------------------------:
-![](/data/images/README/9_antibiogram_raw.jpg)     | ![](/data/images/README/synthetic_antibiogram_1.jpg) | ![](/data/images/README/synthetic_antibiogram_11.jpg) 
+![](/data/images/readme/9_antibiogram_raw.jpg)     | ![](/data/images/readme/synthetic_antibiogram_1.jpg) | ![](/data/images/readme/synthetic_antibiogram_11.jpg) 
  
 Source Real Image: https://www.tgw1916.net/antibiogram.html
  
@@ -32,7 +32,7 @@ The size of the inhibition zone will decide the bactericide effectiveness. In th
 
 | Measure Zone of Inhibition w/Ruler        |  Detect/Measure Zone of Inhibition w/CV    |
 | :----------------------------------------:|:----------------------------------------:  |
-![](/data/images/README/measure-ruler.jpg)  | ![](/data/images/README/.jpg)
+![](/data/images/readme/measure-ruler.jpg)  | ![](/data/images/readme/.jpg)
 
 Note: recommended image size for inference min of 912 x 684 pixels.
 
@@ -45,11 +45,11 @@ Note: recommended image size for inference min of 912 x 684 pixels.
 
 Name of Antibiotic printed in the disks   |  Classify Disk Type
 :----------------------------------------:|:----------------------------------------:
-![](/data/images/README/antimicrobial_disks.png)      | ![](/data/images/README/.jpg) 
+![](/data/images/readme/antimicrobial_disks.png)      | ![](/data/images/readme/.jpg) 
 
 Source: 
 
-![](/data/images/README/process_flow_1.png)
+![](/data/images/readme/process_flow_1.png)
 
 
 ## More Details on Antibiogram
