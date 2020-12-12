@@ -63,7 +63,7 @@ The following image depicts a simplified antibiogram testing process for quick i
 
 | Simplified Antibiogram Process         |
 :----------------------------------------:
-![](/data/images/README/antibiogram-process.jpg)
+![](/data/images/readme/antibiogram-process.jpg)
 Source: http://blog.eoscu.com/blog/what-is-an-antibiogram
  
 
@@ -77,7 +77,7 @@ Source: http://blog.eoscu.com/blog/what-is-an-antibiogram
 
 | Antibiogram (Diffusion Test)               |  Different Types of Results                                   |
 | :----------------------------------------: | :----------------------------------------: |
-![](/data/images/README/Agar_Diffusion_Method_1.jpg)     | ![](/data/images/README/Agar_Diffusion_Method_2.jpg)
+![](/data/images/readme/Agar_Diffusion_Method_1.jpg)     | ![](/data/images/readme/Agar_Diffusion_Method_2.jpg)
 Source: https://en.wikipedia.org/wiki/Disk_diffusion_test
 
  
