@@ -7,8 +7,8 @@
 In this repo, we use Deep Learning and Computer Vision techniques to improve antibiogram testing process.
 
 1. Generate synthetic antibiogram images for training. 
-	- NB Name: 1_Synthetic_Images_Antibiogram.ipynb 
-	- Description: create synthetic image w/segmentation and bbox(COCO format)
+	- _NB Name_: 1_Synthetic_Images_Antibiogram.ipynb 
+	- _Description_: create synthetic image w/annotation for segmentation and bbox(COCO format).
 	
     [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)]()
 	
@@ -19,19 +19,17 @@ Real Image Sample                                  | Synthetic Image            
  
 Source Real Image: https://www.tgw1916.net/antibiogram.html
  
-1a. Convert files to COCO format.
-- NB Name: 1a_Convert2COCO.ipynb
-- Description: Concatenate JSON files obtained in "1_Synthetic_Images_Antibiogram.ipynb" into a COCO format file.
-[![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)]()
+2. Convert files to COCO format.
+    - _NB Name_: 2_Convert2COCO.ipynb
+    - _Description_: Concatenate JSON files obtained in "1_Synthetic_Images_Antibiogram.ipynb" into a COCO format file.
+    - [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)]()
 
 **Note: how to create foreground or background images is not part of the code.  For more information on how to create these images, please refer to the reference section at the end of the repo.**
     
 ---------------------------------------------------------------------------------------------------------------------------------------------    
-2. Detect and measure zone of inhibition with Mask-RCNN. 
-    - NB Name: 2_AntimicrobialDisk-Detectron2.ipynb 
-    - Description: The presence of "zone of inhibition" in an antibiogram image and measures the total diameter of "no growth bacteria zone".
-                   The size of the inhibition zone will decide the bactericide effectiveness. In the absence of inhibition zone, we conclude                    that the bacteria is resistant to the antibiotic.  Traditionally, to measure zone of inhibition, researchers used ruler or
-                   digital caliper.  In this nb, we will detect and measure zone of inhibition using Mask-RCNN.
+3. Detect and measure zone of inhibition with Mask-RCNN. 
+    - _NB Name_: 3_AntimicrobialDisk-Detectron2.ipynb 
+    - _Description_: The presence of "zone of inhibition" in an antibiogram image and measures the total diameter of "no growth bacteria                          zone".  The size of the inhibition zone will decide the bactericide effectiveness. In the absence of inhibition zone, we                      conclude that the bacteria is resistant to the antibiotic.  Traditionally, to measure zone of inhibition, researchers                        used ruler or digital caliper.  In this nb, we will detect and measure zone of inhibition using Mask-RCNN.
     - [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)]()
 
 | Measure Zone of Inhibition w/Ruler        |  Detect/Measure Zone of Inhibition w/MaskRCNN    |
@@ -40,16 +38,14 @@ Source Real Image: https://www.tgw1916.net/antibiogram.html
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
-3. Antimicrobial disks name detection and recognition.  
-    - NB Name: 3_CRAFT-Text-Detect.ipynb
-    - Description: The name of antimicrobial disk is printed at the top of each disk.  The names are abbreviated like, for                         example: GEN(acronym for Gentamicin), CB100(acronym for Clarithromycin), or ENO15(acronym for Enrofloxacin).  This nb rotates the            letters into its right position for text recognition using tessearct.
+4. Antimicrobial disks name detection and recognition.  
+    - _NB Name_: 4_CRAFT-Text-Detect.ipynb
+    - _Description_: The name of antimicrobial disk is printed at the top of each disk.  The names are abbreviated like, for example:                             GEN(acronym for Gentamicin), CB100(acronym for Clarithromycin), or ENO15(acronym for Enrofloxacin).  This nb rotates                         the letters into its right position for text recognition using tessearct.
     - [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)]()(completion: 80%)
 
 Skew Images                               |  Deskew Images with Rotation
 :----------------------------------------:|:----------------------------------------:
 ![](/data/images/readme/antimicrobial_disks.png)      | ![](/data/images/readme/.jpg) 
-
-
 
 
 ![](/data/images/readme/process_flow.png)
@@ -68,9 +64,6 @@ The following image depicts a simplified antibiogram testing process for quick i
 :----------------------------------------:
 ![](/data/images/readme/antibiogram-process.jpg)
 Source: http://blog.eoscu.com/blog/what-is-an-antibiogram
- 
-
- 
 
 
 >"At the patient level, a drug susceptibility report can be provided to the doctor to help choose the correct antibiotic. A sample from the patient is sent to the lab, where a technician tests it against a panel of antibiotics at various levels of concentration (to see how much of the drug is needed to kill the pathogen). Finally, the samples are observed for visible growth of the pathogen. They are >looking for the Minimum Inhibitory Concentration (MIC), the lowest concentration of the drug that shows no pathogen growth.
@@ -83,20 +76,23 @@ Source: http://blog.eoscu.com/blog/what-is-an-antibiogram
 ![](/data/images/readme/Agar_Diffusion_Method_1.jpg)     | ![](/data/images/readme/Agar_Diffusion_Method_2.jpg)
 Source: https://en.wikipedia.org/wiki/Disk_diffusion_test
 
- 
 
-
-** This repo was built using the mighty "fastai nbdev".  For additional information please see below reference.**
+** This repo was built using the mighty "fastai nbdev".  I strongly recommend everyone to try this out!**  
+** For additional information please see below reference.**
 
 ## Reference:
-- fastai nbdev colab:
-- Antibiogram & Antimicrobial Resistance:
-    https://www.who.int/news-room/q-a-detail/antimicrobial-resistance
-    https://www.youtube.com/watch?v=-TZn3ie-iFk&feature=emb_logo
-    https://en.wikipedia.org/wiki/Antibiotic_sensitivity_testing
-    http://cdstest.net/wordpress/wp-content/uploads/2015/05/CDS-ASM-2009.pdf
-    https://asm.org/getattachment/2594ce26-bd44-47f6-8287-0657aa9185ad/Kirby-Bauer-Disk-Diffusion-Susceptibility-Test-Protocol-pdf.pdf
-- Build foreground and background images with GIMP:
+- fastai nbdev colab:<br>
+    https://nbdev.fast.ai/<br>
+    https://pete88b.github.io/nbdev_colab_helper/tutorial_github.html<br>
+- Antibiogram & Antimicrobial Resistance:<br>
+    https://www.who.int/news-room/q-a-detail/antimicrobial-resistance<br>
+    https://www.youtube.com/watch?v=-TZn3ie-iFk&feature=emb_logo<br>
+    https://en.wikipedia.org/wiki/Antibiotic_sensitivity_testing<br>
+    http://cdstest.net/wordpress/wp-content/uploads/2015/05/CDS-ASM-2009.pdf<br>
+    https://asm.org/getattachment/2594ce26-bd44-47f6-8287-0657aa9185ad/Kirby-Bauer-Disk-Diffusion-Susceptibility-Test-Protocol-pdf<br>
+- Build foreground and background images with GIMP:<br>
+    https://www.youtube.com/watch?v=uhRGix-x5Mg<br>
+    https://www.immersivelimit.com/tutorials/cutting-out-image-foregrounds-with-gimp<br>
 
 
 
