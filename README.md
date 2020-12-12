@@ -9,7 +9,7 @@ In this repo, we use Deep Learning and Computer Vision techniques to improve ant
 1. Generate synthetic antibiogram images for training.  Create synthetic image w/annotation for segmentation and bbox(COCO format). 
     
     - **NB Name**: 1_Synthetic_Images_Antibiogram.ipynb 
-    - [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1SDWnradtbk4GQ5WW-h1Wzwwulv4zEhMe#scrollTo=gf4aoaCwHl_R)
+    - [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chho-work/BIODL/blob/main/nb/Synthetic_Images_Antibiogram.ipynb)
 
 |Real Image Sample                                  | Generated Synthetic Image                     | Generate Annotation |
 |:-------------------------------------------------:|:---------------------------------------------:|:----------------------------------------------------:|
