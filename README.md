@@ -9,7 +9,8 @@ In this repo, we use Deep Learning and Computer Vision techniques to improve ant
 1. Generate synthetic antibiogram images for training. 
 	- NB Name: 1_Synthetic_Images_Antibiogram.ipynb 
 	- Description: create synthetic image w/segmentation and bbox(COCO format)
-	- Open the nb in Google Colab [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)]()
+	
+    [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)]()
 	
 
 Real Image Sample                                  | Synthetic Image                               | Generate Annotation 
@@ -18,10 +19,10 @@ Real Image Sample                                  | Synthetic Image            
  
 Source Real Image: https://www.tgw1916.net/antibiogram.html
  
-    1a. Convert files to COCO format.
-        - NB Name: 1a_Convert2COCO.ipynb
-        - Description: Concatenate JSON files obtained in "1_Synthetic_Images_Antibiogram.ipynb" into a COCO format file.
-        - [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)]()
+1a. Convert files to COCO format.
+- NB Name: 1a_Convert2COCO.ipynb
+- Description: Concatenate JSON files obtained in "1_Synthetic_Images_Antibiogram.ipynb" into a COCO format file.
+[![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)]()
 
 **Note: how to create foreground or background images is not part of the code.  For more information on how to create these images, please refer to the reference section at the end of the repo.**
     
