@@ -30,8 +30,8 @@ Source Real Image: https://www.tgw1916.net/antibiogram.html
 ---------------------------------------------------------------------------------------------------------------------------------------------    
 3. Detect and measure zone of inhibition with Mask-RCNN. 
     - *NB Name*: 3_AntimicrobialDisk-Detectron2.ipynb 
-    - *Description*: 
-        The presence of "zone of inhibition" in an antibiogram image and measures the total diameter of "no growth bacteria zone".  The size of the inhibition zone will decide the bactericide effectiveness. In the absence of inhibition zone, we conclude that the bacteria is resistant to the antibiotic.  Traditionally, to measure zone of inhibition, researchers used ruler or digital caliper.  In this nb, we will detect and measure zone of inhibition using Mask-RCNN.
+    - *Description*:<br> 
+<p>The presence of "zone of inhibition" in an antibiogram image and measures the total diameter of "no growth bacteria zone".  The size of the inhibition zone will decide the bactericide effectiveness. In the absence of inhibition zone, we conclude that the bacteria is resistant to the antibiotic.  Traditionally, to measure zone of inhibition, researchers used ruler or digital caliper.  In this nb, we will detect and measure zone of inhibition using Mask-RCNN.</p>
     - [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)]()
 
 | Measure Zone of Inhibition w/Ruler        |  Detect/Measure Zone of Inhibition w/MaskRCNN    |
