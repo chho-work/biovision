@@ -48,7 +48,7 @@ Source Real Image: https://www.tgw1916.net/antibiogram.html
 
 
 
-![](/data/images/readme/process_flow_1.png)
+![](/data/images/readme/process_flow.png)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
