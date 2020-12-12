@@ -31,9 +31,9 @@ Source Real Image: https://www.tgw1916.net/antibiogram.html
     - **NB Name**: 3_AntimicrobialDisk-Detectron2.ipynb 
     - [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)]()
 
-| Measure Zone of Inhibition w/Ruler        |  Detect/Measure Zone of Inhibition w/MaskRCNN    |
-| :----------------------------------------:|:----------------------------------------:  |
-![](/data/images/readme/measure-ruler.jpg)  | ![](/data/images/readme/.jpg)
+| Measure Zone of Inhibition w/Ruler          |  Detect Zone of Inhibition and Disks w/MaskRCNN   | Measure Size of Zone of Inhibition |
+| :------------------------------------------:|:-------------------------------------------------:|:---------------------------------: |
+| ![](/data/images/readme/measure-ruler.jpg)  | ![](/data/images/readme/.jpg)                     | ![](/data/images/readme/.jpg)   |
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -42,13 +42,13 @@ Source Real Image: https://www.tgw1916.net/antibiogram.html
     - **NB Name**: 4_CRAFT-Text-Detect.ipynb (completion: 80%)
     - [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)]()
 
-Skew Images                               |  Deskew Images with Rotation
-:----------------------------------------:|:----------------------------------------:
-![](/data/images/readme/.png)      | ![](/data/images/readme/.jpg) 
+| Skew Images                               |  Deskew Images with Rotation              |
+| :----------------------------------------:|:----------------------------------------: |
+| ![](/data/images/readme/.png)             | ![](/data/images/readme/.jpg)             |
 
 
 
-![](/data/images/readme/process_flow.png)
+![](/data/images/readme/process_flow_1.png)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
