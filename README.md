@@ -8,8 +8,8 @@ In this repo, we use Deep Learning and Computer Vision techniques to improve ant
 
 1. Generate synthetic antibiogram images for training.  Create synthetic image w/annotation for segmentation and bbox(COCO format). 
     
-    - **NB Name**: 1_Synthetic_Images_Antibiogram.ipynb 
-    - [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chho-work/BIODL/blob/main/nb/Synthetic_Images_Antibiogram.ipynb)
+    - **NB Name**: nb/1_Synthetic_Images_Antibiogram.ipynb 
+    - [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/1SDWnradtbk4GQ5WW-h1Wzwwulv4zEhMe/view?usp=sharing)
 
 |Real Image Sample                                  | Generated Synthetic Image                     | Generate Annotation |
 |:-------------------------------------------------:|:---------------------------------------------:|:----------------------------------------------------:|
@@ -20,7 +20,7 @@ Source Real Image: https://www.tgw1916.net/antibiogram.html
 ---------------------------------------------------------------------------------------------------------------------------------------------- 
 2. Convert files to COCO format.  Concatenate JSON files obtained in "1_Synthetic_Images_Antibiogram.ipynb" into a COCO format file.
     
-    - **NB Name**: 2_Convert2COCO.ipynb
+    - **NB Name**: nb/2_Convert2COCO.ipynb
     - [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)]()
 
     **Note: how to create foreground or background images is not part of the code.  For more information on how to create these images, please refer to the reference section at the end of the repo.**
@@ -28,7 +28,7 @@ Source Real Image: https://www.tgw1916.net/antibiogram.html
 ---------------------------------------------------------------------------------------------------------------------------------------------    
 3. Detect and measure zone of inhibition with Mask-RCNN. The presence of "zone of inhibition" in an antibiogram image and measures the total diameter of "no growth bacteria zone".  The size of the inhibition zone will decide the bactericide effectiveness. In the absence of inhibition zone, we conclude that the bacteria is resistant to the antibiotic.  Traditionally, to measure zone of inhibition, researchers used ruler or digital caliper.  In this nb, we will detect and measure zone of inhibition using Mask-RCNN.
 
-    - **NB Name**: 3_AntimicrobialDisk-Detectron2.ipynb 
+    - **NB Name**: nb/3_AntimicrobialDisk-Detectron2.ipynb 
     - [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)]()
 
 | Measure Zone of Inhibition w/Ruler          |  Detect Zone of Inhibition and Disks w/MaskRCNN   | Measure Size of Zone of Inhibition |
@@ -39,7 +39,7 @@ Source Real Image: https://www.tgw1916.net/antibiogram.html
 
 4. Antimicrobial disks name detection and recognition.  The name of antimicrobial disk is printed at the top of each disk.  The names are abbreviated like, for example: GEN(acronym for Gentamicin), CB100(acronym for Clarithromycin), or ENO15(acronym for Enrofloxacin).  This nb rotates the letters into its right position for text recognition using tessearct.
     
-    - **NB Name**: 4_CRAFT-Text-Detect.ipynb (completion: 80%)
+    - **NB Name**: nb/4_CRAFT-Text-Detect.ipynb (completion: 80%)
     - [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)]()
 
 | Skew Images                               |  Deskew Images with Rotation              |
