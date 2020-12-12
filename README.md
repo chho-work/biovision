@@ -11,9 +11,9 @@ In this repo, we use Deep Learning and Computer Vision techniques to improve ant
     - **NB Name**: 1_Synthetic_Images_Antibiogram.ipynb 
     - [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)]()
 
-Real Image Sample                                  | Synthetic Image                               | Generate Annotation 
-:-------------------------------------------------:|:---------------------------------------------:|:----------------------------------------------------:
-![](/data/images/readme/9_antibiogram_raw.jpg)     | ![](/data/images/readme/synthetic_image.jpg) | ![](/data/images/readme/synthetic_annotated.jpg) 
+|Real Image Sample                                  | Synthetic Image                               | Generate Annotation |
+|:-------------------------------------------------:|:---------------------------------------------:|:----------------------------------------------------:|
+![](/data/images/readme/9_antibiogram_raw.jpg)|![](/data/images/readme/synthetic_image.jpg)|![](/data/images/readme/synthetic_annotation.jpg) 
  
 Source Real Image: https://www.tgw1916.net/antibiogram.html
 
@@ -78,7 +78,7 @@ Source: http://blog.eoscu.com/blog/what-is-an-antibiogram
 Source: https://en.wikipedia.org/wiki/Disk_diffusion_test
 
 
-**This repo was built using the mighty "fastai nbdev".  I strongly recommend everyone to try this out!**  
+**This repo was built using the mighty "fastai nbdev".  I strongly recommend everyone to try it out!**  
 **For additional information please see below reference.**
 
 ## Reference:
