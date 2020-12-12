@@ -16,13 +16,14 @@ Real Image Sample                                  | Synthetic Image            
 ![](/data/images/readme/9_antibiogram_raw.jpg)     | ![](/data/images/readme/synthetic_image.jpg) | ![](/data/images/readme/synthetic_annotated.jpg) 
  
 Source Real Image: https://www.tgw1916.net/antibiogram.html
- 
+
+---------------------------------------------------------------------------------------------------------------------------------------------- 
 2. Convert files to COCO format.  Concatenate JSON files obtained in "1_Synthetic_Images_Antibiogram.ipynb" into a COCO format file.
     
     - **NB Name**: 2_Convert2COCO.ipynb
     - [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)]()
 
-**Note: how to create foreground or background images is not part of the code.  For more information on how to create these images, please refer to the reference section at the end of the repo.**
+    **Note: how to create foreground or background images is not part of the code.  For more information on how to create these images, please refer to the reference section at the end of the repo.**
     
 ---------------------------------------------------------------------------------------------------------------------------------------------    
 3. Detect and measure zone of inhibition with Mask-RCNN. The presence of "zone of inhibition" in an antibiogram image and measures the total diameter of "no growth bacteria zone".  The size of the inhibition zone will decide the bactericide effectiveness. In the absence of inhibition zone, we conclude that the bacteria is resistant to the antibiotic.  Traditionally, to measure zone of inhibition, researchers used ruler or digital caliper.  In this nb, we will detect and measure zone of inhibition using Mask-RCNN.
@@ -38,16 +39,18 @@ Source Real Image: https://www.tgw1916.net/antibiogram.html
 
 4. Antimicrobial disks name detection and recognition.  The name of antimicrobial disk is printed at the top of each disk.  The names are abbreviated like, for example: GEN(acronym for Gentamicin), CB100(acronym for Clarithromycin), or ENO15(acronym for Enrofloxacin).  This nb rotates the letters into its right position for text recognition using tessearct.
     
-    - **NB Name**: 4_CRAFT-Text-Detect.ipynb
-    - [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)]()(completion: 80%)
+    - **NB Name**: 4_CRAFT-Text-Detect.ipynb (completion: 80%)
+    - [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)]()
 
 Skew Images                               |  Deskew Images with Rotation
 :----------------------------------------:|:----------------------------------------:
-![](/data/images/readme/antimicrobial_disks.png)      | ![](/data/images/readme/.jpg) 
+![](/data/images/readme/.png)      | ![](/data/images/readme/.jpg) 
+
 
 
 ![](/data/images/readme/process_flow.png)
 
+---------------------------------------------------------------------------------------------------------------------------------------------
 
 ## More Details on Antibiogram
 
