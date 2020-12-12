@@ -12,29 +12,35 @@ In this repo, we use Deep Learning and Computer Vision techniques to improve ant
 
 
 
-1. Generate synthetic antibiogram images for training.
-
-	- NB Name: Synthetic_Images_Antibiogram.ipynb [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)]()
+1. Generate synthetic antibiogram images for training. [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)]()
+	- NB Name: 1_Synthetic_Images_Antibiogram.ipynb 
 	- Description: create synthetic image w/segmentation and bbox(COCO format)
+	
 
-Real Image Sample                                  | Synthetic Image 1                                    | Synthetic Image 2 
-:-------------------------------------------------:|:----------------------------------------------------:|:----------------------------------------------------:
-![](/data/images/readme/9_antibiogram_raw.jpg)     | ![](/data/images/readme/synthetic_antibiogram_1.jpg) | ![](/data/images/readme/synthetic_antibiogram_11.jpg) 
+Real Image Sample                                  | Synthetic Image                               | Annotated Synthetic Image 
+:-------------------------------------------------:|:---------------------------------------------:|:----------------------------------------------------:
+![](/data/images/readme/9_antibiogram_raw.jpg)     | ![](/data/images/readme/synthetic_image.jpg) | ![](/data/images/readme/synthetic_annotated.jpg) 
  
 Source Real Image: https://www.tgw1916.net/antibiogram.html
  
+1a. Convert files to COCO format.
+    - NB Name: 1a_Convert2COCO.ipynb
+    - Description: Concatenate JSON files obtained in "1_Synthetic_Images_Antibiogram.ipynb" into a COCO format file.
+    
+---------------------------------------------------------------------------------------------------------------------------------------------    
+2. Mask-RCNN to detect and measure zone of inhibition. [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)]()
+    - NB Name: 2.ipynb 
+	- Description: The presence of "zone of inhibition" in an antibiogram image and measures the total diameter of "no growth bacteria zone".
+                   The size of the inhibition zone will decide the bactericide effectiveness. In the absence of inhibition zone, we conclude                    that the bacteria is resistant to the antibiotic.  Traditionally, to measure zone of inhibition, researchers used ruler or
+                   digital caliper.  In this nb, we will detect and measure zone of inhibition using Mask-RCNN. 
 
 
-2. Detect the presence of "zone of inhibition" in an antibiogram image and measures the total diameter of "no growth bacteria zone". 
-The size of the inhibition zone will decide the bactericide effectiveness. In the absence of inhibition zone, we conclude that the bacteria is resistant to the antibiotic. 
 
-	Traditionally, to measure zone of inhibition, researchers used ruler or digital caliper.  In this repo, we will detect and measure zone of inhibition using Mask RCNN. 
-
-| Measure Zone of Inhibition w/Ruler        |  Detect/Measure Zone of Inhibition w/CV    |
+| Measure Zone of Inhibition w/Ruler        |  Detect/Measure Zone of Inhibition w/MaskRCNN    |
 | :----------------------------------------:|:----------------------------------------:  |
 ![](/data/images/readme/measure-ruler.jpg)  | ![](/data/images/readme/.jpg)
 
-Note: recommended image size for inference min of 912 x 684 pixels.
+---------------------------------------------------------------------------------------------------------------------------------------------
 
 3. Classify the different types of Antibiotic Disks.  The names of each antibiotic are visible in the disk.  We will classify them using a Softmax Classifier.
  
@@ -49,7 +55,7 @@ Name of Antibiotic printed in the disks   |  Classify Disk Type
 
 Source: 
 
-![](/data/images/readme/process_flow_1.png)
+![](/data/images/readme/process_flow.png)
 
 
 ## More Details on Antibiogram
