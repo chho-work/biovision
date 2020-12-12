@@ -2,16 +2,16 @@
 
 ## Detect Measure & Classify Antibiogram Using CNN
 
-**Antibiogram Test**, a widely used tool in microbiology to find the level of [antimicrobial susceptibility](https://en.wikipedia.org/wiki/Disk_diffusion_test) is currently performed by clinicians manually, using a ruler or digital caliper.  In some way this is impractical, prone to misread the results and outdated given the current available technology.
+**Antibiogram Test**, a widely used tool in microbiology to find the level of [antimicrobial susceptibility](https://en.wikipedia.org/wiki/Disk_diffusion_test) is currently performed by clinicians manually, using a ruler or digital caliper.  In some way this is impractical, susceptible of being misread the results and outdated given the current available technology.
 
 In this repo, we use Deep Learning and Computer Vision techniques to improve antibiogram testing process.
 
 1. Generate synthetic antibiogram images for training.  Create synthetic image w/annotation for segmentation and bbox(COCO format). 
     
     - **NB Name**: 1_Synthetic_Images_Antibiogram.ipynb 
-    - [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)]()
+    - [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1SDWnradtbk4GQ5WW-h1Wzwwulv4zEhMe#scrollTo=gf4aoaCwHl_R)
 
-|Real Image Sample                                  | Synthetic Image                               | Generate Annotation |
+|Real Image Sample                                  | Generated Synthetic Image                     | Generate Annotation |
 |:-------------------------------------------------:|:---------------------------------------------:|:----------------------------------------------------:|
 ![](/data/images/readme/9_antibiogram_raw.jpg)|![](/data/images/readme/synthetic_image.jpg)|![](/data/images/readme/synthetic_annotation.jpg) 
  
