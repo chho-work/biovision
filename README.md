@@ -1,7 +1,3 @@
-Under Construction<br>
-Completion: 60
-
-
 # Computer Vision in Microbiology
 
 ## Detect Measure & Classify Antibiogram Using CNN
@@ -10,31 +6,32 @@ Completion: 60
 
 In this repo, we use Deep Learning and Computer Vision techniques to improve antibiogram testing process.
 
-
-
-1. Generate synthetic antibiogram images for training. [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)]()
+1. Generate synthetic antibiogram images for training. 
 	- NB Name: 1_Synthetic_Images_Antibiogram.ipynb 
 	- Description: create synthetic image w/segmentation and bbox(COCO format)
+	- Open the nb in Google Colab [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)]()
 	
 
-Real Image Sample                                  | Synthetic Image                               | Annotated Synthetic Image 
+Real Image Sample                                  | Synthetic Image                               | Generate Annotation 
 :-------------------------------------------------:|:---------------------------------------------:|:----------------------------------------------------:
 ![](/data/images/readme/9_antibiogram_raw.jpg)     | ![](/data/images/readme/synthetic_image.jpg) | ![](/data/images/readme/synthetic_annotated.jpg) 
  
 Source Real Image: https://www.tgw1916.net/antibiogram.html
  
-1a. Convert files to COCO format.
-    - NB Name: 1a_Convert2COCO.ipynb
-    - Description: Concatenate JSON files obtained in "1_Synthetic_Images_Antibiogram.ipynb" into a COCO format file.
+    1a. Convert files to COCO format.
+        - NB Name: 1a_Convert2COCO.ipynb
+        - Description: Concatenate JSON files obtained in "1_Synthetic_Images_Antibiogram.ipynb" into a COCO format file.
+        - Open the nb in Google Colab [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)]()
+
+**Note: how to create foreground or background images is not part of the code.  For more information on how to create these images, please refer to the reference section at the end of the repo.**
     
 ---------------------------------------------------------------------------------------------------------------------------------------------    
-2. Mask-RCNN to detect and measure zone of inhibition. [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)]()
-    - NB Name: 2.ipynb 
-	- Description: The presence of "zone of inhibition" in an antibiogram image and measures the total diameter of "no growth bacteria zone".
+2. Detect and measure zone of inhibition with Mask-RCNN. [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)]()
+    - NB Name: 2_AntimicrobialDisk-Detectron2.ipynb 
+    - Description: The presence of "zone of inhibition" in an antibiogram image and measures the total diameter of "no growth bacteria zone".
                    The size of the inhibition zone will decide the bactericide effectiveness. In the absence of inhibition zone, we conclude                    that the bacteria is resistant to the antibiotic.  Traditionally, to measure zone of inhibition, researchers used ruler or
-                   digital caliper.  In this nb, we will detect and measure zone of inhibition using Mask-RCNN. 
-
-
+                   digital caliper.  In this nb, we will detect and measure zone of inhibition using Mask-RCNN.
+    - Open the nb in Google Colab [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)]()
 
 | Measure Zone of Inhibition w/Ruler        |  Detect/Measure Zone of Inhibition w/MaskRCNN    |
 | :----------------------------------------:|:----------------------------------------:  |
@@ -42,18 +39,17 @@ Source Real Image: https://www.tgw1916.net/antibiogram.html
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
-3. Classify the different types of Antibiotic Disks.  The names of each antibiotic are visible in the disk.  We will classify them using a Softmax Classifier.
- 
-    For example: 
-    - GEN 10 = Gentamicin 
-    - CB 100 = Clarithromycin 
-    - ENO 15 = Enrofloxacin
+3. Antimicrobial disks name detection and recognition.  
+    - NB Name: 3_CRAFT-Text-Detect.ipynb
+    - Description: The name of antimicrobial disk is printed at the top of each disk.  The names are abbreviated like, for                         example: GEN(acronym for Gentamicin), CB100(acronym for Clarithromycin), or ENO15(acronym for Enrofloxacin).  This nb rotates the            letters into its right position for text recognition using tessearct.
+    - Open the nb in Google Colab [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)]()(completion: 80%)
 
-Name of Antibiotic printed in the disks   |  Classify Disk Type
+Skew Images                               |  Deskew Images with Rotation
 :----------------------------------------:|:----------------------------------------:
 ![](/data/images/readme/antimicrobial_disks.png)      | ![](/data/images/readme/.jpg) 
 
-Source: 
+
+
 
 ![](/data/images/readme/process_flow.png)
 
@@ -89,19 +85,17 @@ Source: https://en.wikipedia.org/wiki/Disk_diffusion_test
  
 
 
-* This repo was built using the mighty "fastai nbdev".  For additional information please see below reference section.
+** This repo was built using the mighty "fastai nbdev".  For additional information please see below reference.**
 
-
-
-
-
-## Reference
-
-	- https://www.who.int/news-room/q-a-detail/antimicrobial-resistance
-	- https://www.youtube.com/watch?v=-TZn3ie-iFk&feature=emb_logo
-	- https://en.wikipedia.org/wiki/Antibiotic_sensitivity_testing
-	- http://cdstest.net/wordpress/wp-content/uploads/2015/05/CDS-ASM-2009.pdf
-	- https://asm.org/getattachment/2594ce26-bd44-47f6-8287-0657aa9185ad/Kirby-Bauer-Disk-Diffusion-Susceptibility-Test-Protocol-pdf.pdf
+## Reference:
+- fastai nbdev colab:
+- Antibiogram & Antimicrobial Resistance:
+    https://www.who.int/news-room/q-a-detail/antimicrobial-resistance
+    https://www.youtube.com/watch?v=-TZn3ie-iFk&feature=emb_logo
+    https://en.wikipedia.org/wiki/Antibiotic_sensitivity_testing
+    http://cdstest.net/wordpress/wp-content/uploads/2015/05/CDS-ASM-2009.pdf
+    https://asm.org/getattachment/2594ce26-bd44-47f6-8287-0657aa9185ad/Kirby-Bauer-Disk-Diffusion-Susceptibility-Test-Protocol-pdf.pdf
+- Build foreground and background images with GIMP:
 
 
 
