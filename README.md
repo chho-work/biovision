@@ -21,17 +21,17 @@ Source Real Image: https://www.tgw1916.net/antibiogram.html
     1a. Convert files to COCO format.
         - NB Name: 1a_Convert2COCO.ipynb
         - Description: Concatenate JSON files obtained in "1_Synthetic_Images_Antibiogram.ipynb" into a COCO format file.
-        - Open the nb in Google Colab [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)]()
+        - [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)]()
 
 **Note: how to create foreground or background images is not part of the code.  For more information on how to create these images, please refer to the reference section at the end of the repo.**
     
 ---------------------------------------------------------------------------------------------------------------------------------------------    
-2. Detect and measure zone of inhibition with Mask-RCNN. [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)]()
+2. Detect and measure zone of inhibition with Mask-RCNN. 
     - NB Name: 2_AntimicrobialDisk-Detectron2.ipynb 
     - Description: The presence of "zone of inhibition" in an antibiogram image and measures the total diameter of "no growth bacteria zone".
                    The size of the inhibition zone will decide the bactericide effectiveness. In the absence of inhibition zone, we conclude                    that the bacteria is resistant to the antibiotic.  Traditionally, to measure zone of inhibition, researchers used ruler or
                    digital caliper.  In this nb, we will detect and measure zone of inhibition using Mask-RCNN.
-    - Open the nb in Google Colab [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)]()
+    - [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)]()
 
 | Measure Zone of Inhibition w/Ruler        |  Detect/Measure Zone of Inhibition w/MaskRCNN    |
 | :----------------------------------------:|:----------------------------------------:  |
@@ -42,7 +42,7 @@ Source Real Image: https://www.tgw1916.net/antibiogram.html
 3. Antimicrobial disks name detection and recognition.  
     - NB Name: 3_CRAFT-Text-Detect.ipynb
     - Description: The name of antimicrobial disk is printed at the top of each disk.  The names are abbreviated like, for                         example: GEN(acronym for Gentamicin), CB100(acronym for Clarithromycin), or ENO15(acronym for Enrofloxacin).  This nb rotates the            letters into its right position for text recognition using tessearct.
-    - Open the nb in Google Colab [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)]()(completion: 80%)
+    - [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)]()(completion: 80%)
 
 Skew Images                               |  Deskew Images with Rotation
 :----------------------------------------:|:----------------------------------------:
