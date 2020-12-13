@@ -9,7 +9,7 @@ In this repo, we use Deep Learning and Computer Vision techniques to improve ant
 1. Generate synthetic antibiogram images for training.  Create synthetic image w/annotation for segmentation and bbox(COCO format). 
     
     - **Notebook Name**: [Synthetic_Images_Antibiogram.ipynb](/nb/Synthetic_Images_Antibiogram.ipynb)
-    - Download [53 images and JSON annotation files](https://drive.google.com/uc?export=view&id=1-AeYSYFv9YFni2cYa_h0NhJW6gieA82E?) created with this nb.  I will use them as sample to execute the next notebooks. 
+    - Download [53 images and JSON annotation files](https://drive.google.com/drive/folders/1-AeYSYFv9YFni2cYa_h0NhJW6gieA82E?usp=sharing)created with this nb.  I will use them as sample to execute the next notebooks. 
 
 |Real Image Sample                                  | Generated Synthetic Image                     | Generate Annotation |
 |:-------------------------------------------------:|:---------------------------------------------:|:----------------------------------------------------:|
