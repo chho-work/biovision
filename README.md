@@ -9,6 +9,7 @@ In this repo, we use Deep Learning and Computer Vision techniques to improve ant
 1. Generate synthetic antibiogram images for training.  Create synthetic image w/annotation for segmentation and bbox(COCO format). 
     
     - **NB Name**: [Synthetic_Images_Antibiogram.ipynb](/nb/Synthetic_Images_Antibiogram.ipynb)
+    - Download 53 images and JSON annotation files created with this nb(https://drive.google.com/uc?export=view&id=1-AeYSYFv9YFni2cYa_h0NhJW6gieA82E) 
 
 |Real Image Sample                                  | Generated Synthetic Image                     | Generate Annotation |
 |:-------------------------------------------------:|:---------------------------------------------:|:----------------------------------------------------:|
@@ -19,7 +20,7 @@ Source Real Image: https://www.tgw1916.net/antibiogram.html
 ---------------------------------------------------------------------------------------------------------------------------------------------- 
 2. Convert files to COCO format.  Concatenate JSON files obtained in "1_Synthetic_Images_Antibiogram.ipynb" into a COCO format file.
     
-    - **NB Name**: [Convert2COCO.ipynb](/nb/Convert2COCO.ipynb)
+    - **NB Name**: [Convert2JSON(COCO).ipynb](/nb/Convert2JSON(COCO).ipynb)
 
     **Note: how to create foreground or background images is not part of the code.  For more information on how to create these images, please refer to the reference section at the end of the repo.**
     
