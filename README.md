@@ -31,7 +31,7 @@ Source Real Image: https://www.tgw1916.net/antibiogram.html
 
 | Measure Zone of Inhibition w/Ruler          |  Detect Zone of Inhibition and Disks w/MaskRCNN   | Measure Size of Zone of Inhibition |
 | :------------------------------------------:|:-------------------------------------------------:|:---------------------------------: |
-| ![](/data/images/readme/measure-ruler.jpg)  | ![](/data/images/readme/test_image_1_inference.jpg)| ![](/data/images/readme/measure_zone_inhibition.jpg)   |
+| ![](/data/images/readme/measure-ruler.jpg)  | ![](/data/images/readme/test_image_inference.jpg)| ![](/data/images/readme/measure_zone_inhibition.jpg)   |
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
