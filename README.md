@@ -2,58 +2,60 @@
 
 ## Detect Measure & Classify Antibiogram Using CNN
 
-### Overview
+## Overview
 
 **Antibiogram Test**, is a widely used tool in microbiology to find the level of [antimicrobial susceptibility](https://en.wikipedia.org/wiki/Disk_diffusion_test).  Part of its process consists of measuring "zone of inhibition"(see below for explanation), which is currently performed by clinicians manually using a ruler or digital calliper.
 
 ![](/data/images/readme/measure_manual.png) 
 
-Image Source: 
+Image Sources: 
 * https://www.ecdc.europa.eu/en/publications-data/eucast-instruction-video-reading-inhibition-zone-diameters
 * https://commons.wikimedia.org/wiki/File:Zone_of_Inhibition.jpg
 * https://www.youtube.com/watch?v=-TZn3ie-iFk
-* 
+* https://asm.org/getattachment/2594ce26-bd44-47f6-8287-0657aa9185ad/Kirby-Bauer-Disk-Diffusion-Susceptibility-Test-Protocol-pdf.pdf
 
 
-In some way this is impractical and prone to error.  For example, the small sizes of the ruler and petri dish could lead to misreading. Nevertheless, given the current available computer vision technologies, we are able to improve this measuring process.
+In some way this is impractical and prone to error.  For example, the smaller sizes of the ruler and petri dish could lead to misreading. Nevertheless, given the current available computer vision technologies, we are able to improve this measuring process.
 
 ![](/data/images/readme/inference_measurement.png) 
 
-In this repo, I used Deep Learning techniques to detect and measure the "zone of inhibition".
+In this repo, I used Deep Learning techniques to detect and measure the "zone of inhibition".  
 
 1. Generate Synthetic Images
+
     - **Notebook Name**: [Synthetic_Images_Antibiogram.ipynb](/nb/Synthetic_Images_Antibiogram.ipynb)(Open in Colab!)
     - Download [53 images](https://drive.google.com/file/d/1sIeCJ2YuEzYAexzx-be7Fd7x-CQrFKjt/view?usp=sharing) and [JSON annotation files](https://drive.google.com/file/d/1DZ7YvQS04T0DdkagDsGZsPhFIrj97Z_C/view?usp=sharing) created with this notebook.  I will use them as sample to train Mask RCNN. 
 
-    This notebook generates synthetic images for training.  It creates synthetic images w/annotation for segmentation and bbox(COCO format). 
+    This first notebook generates synthetic images([more sample here](/data)) for training.  I did not have sufficient real images to use for training.  Therefore, I had to create synthetic images.  This notebook goes through step-by-step on how I pasted foreground and background images into look-alike antibiogram images.  I was also able to create image annotations for segmentation and bbox(COCO format). 
+
+**Note: how to create foreground or background images is not part of the code.  For more information on how to create these images, please refer to the reference section at the end of the repo.**
 
 |Real Image Sample                                  | [Generated Synthetic Image](/data)           | [Generate Annotation](/data)          |
 |:-------------------------------------------------:|:---------------------------------------------:|:--------------------------------------:|
 ![](/data/images/readme/9_antibiogram_raw.jpg)|![](/data/images/readme/synthetic_image.jpg)|![](/data/images/readme/synthetic_annotation.jpg) 
  
-Source Real Image: https://www.tgw1916.net/antibiogram.html
+Image Source: https://www.tgw1916.net/antibiogram.html
 
----------------------------------------------------------------------------------------------------------------------------------------------- 
-2. Convert files to COCO format.  Concatenate JSON files obtained in "1_Synthetic_Images_Antibiogram.ipynb" into a COCO format file.
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+2. Convert JSON Files to COCO Format:  
     
     - **Notebook Name**: [Convert2JSON(COCO).ipynb](/nb/Convert2JSON(COCO).ipynb)(Open in Colab!)
 
-    **Note: how to create foreground or background images is not part of the code.  For more information on how to create these images, please refer to the reference section at the end of the repo.**
+    This second notebook contains code that converts all the annotation(JSON format) files generated in the first notebook into a single COCO format file.  With this COCO format file and the synthetic images, we can start training object recognition in Mask RCNN.   
+    
     
 ---------------------------------------------------------------------------------------------------------------------------------------------    
-3. Detect and measure zone of inhibition with Mask-RCNN. The presence of "zone of inhibition" in an antibiogram image and measures the total diameter of "no growth bacteria zone".  The size of the inhibition zone will decide the bactericide effectiveness. In the absence of inhibition zone, we conclude that the bacteria is resistant to the antibiotic.  Traditionally, to measure zone of inhibition, researchers used ruler or digital caliper.  In this nb, we will detect and measure zone of inhibition using Mask-RCNN.
+3. Train & Inference w/Mask-RCNN and Detect & Measure Zone of Inhibition: 
 
     - **Notebook Name**: [AntimicrobialDisk-Detectron2.ipynb](/nb/AntimicrobialDisk-Detectron2.ipynb)(Open in Colab!)
-
-| Measure Zone of Inhibition w/Ruler          |  Detect Zone of Inhibition and Disks w/MaskRCNN   | Measure Size of Zone of Inhibition |
-| :------------------------------------------:|:-------------------------------------------------:|:---------------------------------: |
-| ![](/data/images/readme/measure-ruler.jpg)  | ![](/data/images/readme/test_image_inference.jpg)| ![](/data/images/readme/measure_zone_inhibition.jpg)   |
+    
+    In this final notebook, I used a pretrained Mask RCNN model in Detectron2 to detect zone of inhition in antibiogram images.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
 **ToDo**:
  - [ ] Convert notebooks to script format
- - [ ] Add feature: text recognition of the character on top of the disk
  - [ ] Connect with Weights & Biases for tracking metrics
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
