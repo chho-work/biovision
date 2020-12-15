@@ -6,10 +6,13 @@
 
 **Antibiogram Test**, is a widely used tool in microbiology to find the level of [antimicrobial susceptibility](https://en.wikipedia.org/wiki/Disk_diffusion_test).  Part of its process consists of measuring "zone of inhibition"(see below for explanation), which is currently performed by clinicians manually using a ruler or digital calliper.
 
-![](/data/images/readme/measure-manual.png) 
+![](/data/images/readme/measure_manual.png) 
 
 Image Source: 
 * https://www.ecdc.europa.eu/en/publications-data/eucast-instruction-video-reading-inhibition-zone-diameters
+* https://commons.wikimedia.org/wiki/File:Zone_of_Inhibition.jpg
+* https://www.youtube.com/watch?v=-TZn3ie-iFk
+* 
 
 
 In some way this is impractical and prone to error.  For example, the small sizes of the ruler and petri dish could lead to misreading. Nevertheless, given the current available computer vision technologies, we are able to improve this measuring process.
@@ -18,11 +21,11 @@ In some way this is impractical and prone to error.  For example, the small size
 
 In this repo, I used Deep Learning techniques to detect and measure the "zone of inhibition".
 
-1. Generate synthetic antibiogram images
-    We by generating synthetic images for training.  Create synthetic image w/annotation for segmentation and bbox(COCO format). 
-    
+1. Generate Synthetic Images
     - **Notebook Name**: [Synthetic_Images_Antibiogram.ipynb](/nb/Synthetic_Images_Antibiogram.ipynb)(Open in Colab!)
     - Download [53 images](https://drive.google.com/file/d/1sIeCJ2YuEzYAexzx-be7Fd7x-CQrFKjt/view?usp=sharing) and [JSON annotation files](https://drive.google.com/file/d/1DZ7YvQS04T0DdkagDsGZsPhFIrj97Z_C/view?usp=sharing) created with this notebook.  I will use them as sample to train Mask RCNN. 
+
+    This notebook generates synthetic images for training.  It creates synthetic images w/annotation for segmentation and bbox(COCO format). 
 
 |Real Image Sample                                  | [Generated Synthetic Image](/data)           | [Generate Annotation](/data)          |
 |:-------------------------------------------------:|:---------------------------------------------:|:--------------------------------------:|
