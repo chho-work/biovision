@@ -14,7 +14,7 @@ Image Source:
 
 In some way this is impractical and prone to error.  For example, the small sizes of the ruler and petri dish could lead to misreading. Nevertheless, given the current available computer vision technologies, we are able to improve this measuring process.
 
-![](/data/images/readme/test_image_inference.jpg) ![](/data/images/readme/zone_measure.jpg)
+![](/data/images/readme/inference_measurement.png) 
 
 In this repo, I used Deep Learning techniques to detect and measure the "zone of inhibition".
 
