@@ -6,17 +6,17 @@
 
 **Antibiogram Test**, is a widely used tool in microbiology to find the level of [antimicrobial susceptibility](https://en.wikipedia.org/wiki/Disk_diffusion_test).  Part of its process consists of measuring "zone of inhibition"(see below for explanation), which is currently performed by clinicians manually using a ruler or digital calliper.
 
-![](/data/images/readme/measure-ruler-1.jpg) ![](/data/images/readme/measure-callipher.jpg)![](/data/images/readme/measure-ruler-2.jpg) ![](/data/images/readme/measure-ruler-3.jpg)
+![](/data/images/readme/measure-ruler-1.jpg) ![](/data/images/readme/measure-callipher.jpg)![](/data/images/readme/measure-ruler-2.jpg) 
 
-Image Source: https://www.ecdc.europa.eu/en/publications-data/eucast-instruction-video-reading-inhibition-zone-diameters
+Image Source: 
+* https://www.ecdc.europa.eu/en/publications-data/eucast-instruction-video-reading-inhibition-zone-diameters
 
 
-In some way this is impractical and prone to error.  The results could be misread due to small sizes of the ruler and petri dish.    
-Nevertheless, given the current available computer vision technologies, we are able to improve this measuring process.
+In some way this is impractical and prone to error.  For example, the small sizes of the ruler and petri dish could lead to misreading. Nevertheless, given the current available computer vision technologies, we are able to improve this measuring process.
 
-![](/data/images/readme/test_image_inference.jpg) ![](/data/images/readme/measure_zone_inhibition.jpg)
+![](/data/images/readme/test_image_inference.jpg) ![](/data/images/readme/zone_measure.jpg)
 
-In this repo, I used Deep Learning and Computer Vision techniques to detect and measure the "zone of inhibition".
+In this repo, I used Deep Learning techniques to detect and measure the "zone of inhibition".
 
 1. Generate synthetic antibiogram images
     We by generating synthetic images for training.  Create synthetic image w/annotation for segmentation and bbox(COCO format). 
