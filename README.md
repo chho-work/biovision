@@ -35,21 +35,12 @@ Source Real Image: https://www.tgw1916.net/antibiogram.html
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
-4. Antimicrobial disks name detection and recognition.  The name of antimicrobial disk is printed at the top of each disk.  The names are abbreviated like, for example: GEN(acronym for Gentamicin), CB100(acronym for Clarithromycin), or ENO15(acronym for Enrofloxacin).  This nb rotates the letters into its right position for text recognition using tessearct.
-    
-    - **Notebook Name**: [CRAFT-Text-Detect.ipynb](nb/CRAFT-Text-Detect.ipynb)(Open in Colab!)(completion: 80%)
-    - ToDo: 1)add tessearct 
-
-| Skew Images                               |  Deskew Images with Rotation              |
-| :----------------------------------------:|:----------------------------------------: |
-| ![](/data/images/readme/.png)             | ![](/data/images/readme/.jpg)             |
-
-
-
-![](/data/images/readme/process_flow.png)
+**ToDo**:
+ - [ ] Convert notebooks to script format
+ - [ ] Add feature: text recognition of the character on top of the disk
+ - [ ] Connect with Weights & Biases for tracking metrics
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
-
 ## More Information on Antibiogram
 
 **Antibiogram** is a toolkit widely used in hospital and medical laboratories to aid clinicians, epidemiologists, pharmacists and alike healthcare practitioners to detect and monitor trends in antimicrobial resistance and prevent infections.
