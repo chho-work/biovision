@@ -9,10 +9,10 @@ In this repo, we use Deep Learning and Computer Vision techniques to improve ant
 1. Generate synthetic antibiogram images for training.  Create synthetic image w/annotation for segmentation and bbox(COCO format). 
     
     - **Notebook Name**: [Synthetic_Images_Antibiogram.ipynb](/nb/Synthetic_Images_Antibiogram.ipynb)(Open in Colab!)
-    - Download [53 images](https://drive.google.com/file/d/1sIeCJ2YuEzYAexzx-be7Fd7x-CQrFKjt/view?usp=sharing) and [JSON annotation files](https://drive.google.com/file/d/1DZ7YvQS04T0DdkagDsGZsPhFIrj97Z_C/view?usp=sharing) created with this nb.  I will use them as sample to execute the next notebooks. 
+    - Download [53 images](https://drive.google.com/file/d/1sIeCJ2YuEzYAexzx-be7Fd7x-CQrFKjt/view?usp=sharing) and [JSON annotation files](https://drive.google.com/file/d/1DZ7YvQS04T0DdkagDsGZsPhFIrj97Z_C/view?usp=sharing) created with this notebook.  I will use them as sample to train Mask RCNN. 
 
-|Real Image Sample                                  | Generated Synthetic Image                     | Generate Annotation |
-|:-------------------------------------------------:|:---------------------------------------------:|:----------------------------------------------------:|
+|Real Image Sample                                  | ![Generated Synthetic Image](/data)           | ![Generate Annotation](/data)          |
+|:-------------------------------------------------:|:---------------------------------------------:|:--------------------------------------:|
 ![](/data/images/readme/9_antibiogram_raw.jpg)|![](/data/images/readme/synthetic_image.jpg)|![](/data/images/readme/synthetic_annotation.jpg) 
  
 Source Real Image: https://www.tgw1916.net/antibiogram.html
