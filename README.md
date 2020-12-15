@@ -6,7 +6,7 @@
 
 **Antibiogram Test**, is a widely used tool in microbiology to find the level of [antimicrobial susceptibility](https://en.wikipedia.org/wiki/Disk_diffusion_test).  Part of its process consists of measuring "zone of inhibition"(see below for explanation), which is currently performed by clinicians manually using a ruler or digital calliper.
 
-![](/data/images/readme/measure-manual.jpg) 
+![](/data/images/readme/measure-manual.png) 
 
 Image Source: 
 * https://www.ecdc.europa.eu/en/publications-data/eucast-instruction-video-reading-inhibition-zone-diameters
