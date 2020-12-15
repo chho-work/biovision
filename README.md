@@ -8,12 +8,6 @@
 
 ![](/data/images/readme/measure_manual.png) 
 
-Image Sources: 
-* https://www.ecdc.europa.eu/en/publications-data/eucast-instruction-video-reading-inhibition-zone-diameters
-* https://commons.wikimedia.org/wiki/File:Zone_of_Inhibition.jpg
-* https://www.youtube.com/watch?v=-TZn3ie-iFk
-* https://asm.org/getattachment/2594ce26-bd44-47f6-8287-0657aa9185ad/Kirby-Bauer-Disk-Diffusion-Susceptibility-Test-Protocol-pdf.pdf
-
 
 In some way this is impractical and prone to error.  For example, the smaller sizes of the ruler and petri dish could lead to misreading. Nevertheless, given the current available computer vision technologies, we are able to improve this measuring process.
 
@@ -32,9 +26,7 @@ In this repo, I used Deep Learning techniques to detect and measure the "zone of
 
 |Real Image Sample                                  | [Generated Synthetic Image](/data)           | [Generate Annotation](/data)          |
 |:-------------------------------------------------:|:---------------------------------------------:|:--------------------------------------:|
-![](/data/images/readme/9_antibiogram_raw.jpg)|![](/data/images/readme/synthetic_image.jpg)|![](/data/images/readme/synthetic_annotation.jpg) 
- 
-Image Source: https://www.tgw1916.net/antibiogram.html
+![](/data/images/readme/9_antibiogram_raw.jpg)|![](/data/images/readme/synthetic_image.jpg)|![](/data/images/readme/synthetic_annotation.jpg)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -71,7 +63,7 @@ The following image depicts a simplified antibiogram testing process for quick i
 | Simplified Antibiogram Process         |
 :----------------------------------------:
 ![](/data/images/readme/antibiogram-process.jpg)
-Source: http://blog.eoscu.com/blog/what-is-an-antibiogram
+
 
 
 >"At the patient level, a drug susceptibility report can be provided to the doctor to help choose the correct antibiotic. A sample from the patient is sent to the lab, where a technician tests it against a panel of antibiotics at various levels of concentration (to see how much of the drug is needed to kill the pathogen). Finally, the samples are observed for visible growth of the pathogen. They are >looking for the Minimum Inhibitory Concentration (MIC), the lowest concentration of the drug that shows no pathogen growth.
@@ -82,7 +74,7 @@ Source: http://blog.eoscu.com/blog/what-is-an-antibiogram
 | Antibiogram (Diffusion Test)               |  Different Types of Results                                   |
 | :----------------------------------------: | :----------------------------------------: |
 ![](/data/images/readme/Agar_Diffusion_Method_1.jpg)     | ![](/data/images/readme/Agar_Diffusion_Method_2.jpg)
-Source: https://en.wikipedia.org/wiki/Disk_diffusion_test
+
 
 
 **This repo was built using the mighty "fastai nbdev".  I strongly recommend everyone to try it out!**  
@@ -101,6 +93,11 @@ Source: https://en.wikipedia.org/wiki/Disk_diffusion_test
 - Build foreground and background images with GIMP:<br>
     https://www.youtube.com/watch?v=uhRGix-x5Mg<br>
     https://www.immersivelimit.com/tutorials/cutting-out-image-foregrounds-with-gimp<br>
-
-
-
+- Image Sources: 
+    https://www.ecdc.europa.eu/en/publications-data/eucast-instruction-video-reading-inhibition-zone-diameters
+    https://commons.wikimedia.org/wiki/File:Zone_of_Inhibition.jpg
+    https://www.youtube.com/watch?v=-TZn3ie-iFk
+    https://asm.org/getattachment/2594ce26-bd44-47f6-8287-0657aa9185ad/Kirby-Bauer-Disk-Diffusion-Susceptibility-Test-Protocol-pdf.pdf
+    https://en.wikipedia.org/wiki/Disk_diffusion_test
+    http://blog.eoscu.com/blog/what-is-an-antibiogram
+    https://www.tgw1916.net/antibiogram.html
