@@ -12,7 +12,7 @@
 
 |                                                   |                                                 | 
 |:-------------------------------------------------:|:-----------------------------------------------:|
-|![](/data/images/readme/sample_synthetic_1.jpg)    |![](/data/images/readme/synthetic_img_annotation_13.jpg)  |
+|![](/data/images/readme/synthetic_img_annotation_1.jpg)    |![](/data/images/readme/synthetic_img_annotation_13.jpg)  |
 
 |                                                   |                                                 |
 |:-------------------------------------------------:|:-----------------------------------------------:|
