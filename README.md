@@ -4,12 +4,12 @@
 
 **_Detect, measure and classify Antibiogram. A training pipeline with synthetic images and Mask RCNN._**
 
-**Antibiogram Test**, is a widely used tool in microbiology to find the level of [antimicrobial susceptibility](https://en.wikipedia.org/wiki/Disk_diffusion_test).  Part of its process consists of measuring "zone of inhibition"(see below for explanation), which is currently performed by clinicians manually using a ruler or digital calliper.
+**Antibiogram Test**, is a widely used tool in microbiology to find the level of [antimicrobial susceptibility](https://en.wikipedia.org/wiki/Disk_diffusion_test).  Part of this process consists of measuring "zone of inhibition"(see below for explanation), which is currently performed by clinicians manually using a "ruler" or "digital calliper".
 
 ![](/data/images/readme/measure_manual.png) 
 
 
-In some way this is impractical and prone to error.  For example, the smaller sizes of the ruler and petri dish could lead to misreading. Nevertheless, given the current available computer vision technologies, we are able to improve this measuring process.
+In some way this is impractical and prone to error.  For example, the tiny ruler number could lead to misreading. Nevertheless, given the current available computer vision technologies, we are able to improve this measuring process.
 
 ![](/data/images/readme/inference_measurement.png) 
 
@@ -80,7 +80,7 @@ The following image depicts a simplified antibiogram testing process for quick i
 **This repo was built using the mighty "fastai nbdev".  I strongly recommend everyone to try it out!**  
 **For additional information please see below reference.**
 
-## Reference:
+## References:
 - fastai nbdev colab:<br>
     https://nbdev.fast.ai/<br>
     https://pete88b.github.io/nbdev_colab_helper/tutorial_github.html<br>
@@ -93,7 +93,7 @@ The following image depicts a simplified antibiogram testing process for quick i
 - Build foreground and background images with GIMP:<br>
     https://www.youtube.com/watch?v=uhRGix-x5Mg<br>
     https://www.immersivelimit.com/tutorials/cutting-out-image-foregrounds-with-gimp<br>
-- Image Sources: 
+- Image Sources:<br> 
     https://www.ecdc.europa.eu/en/publications-data/eucast-instruction-video-reading-inhibition-zone-diameters<br>
     https://commons.wikimedia.org/wiki/File:Zone_of_Inhibition.jpg<br>
     https://www.youtube.com/watch?v=-TZn3ie-iFk<br>
