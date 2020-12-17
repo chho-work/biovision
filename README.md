@@ -1,6 +1,8 @@
 # Computer Vision in Microbiology
 
-## Detect Measure & Classify Antibiogram Using CNN
+## Detect Measure & Classify Antibiogram
+### Training Pipeline with Synthetic Images and Mask RCNN
+
 
 ## Overview
 
@@ -42,7 +44,7 @@ In this repo, I used Deep Learning techniques to detect and measure the "zone of
 
     - **Notebook Name**: [AntimicrobialDisk-Detectron2.ipynb](/nb/AntimicrobialDisk-Detectron2.ipynb)(Open in Colab!)
     
-    In this final notebook, I used a pretrained Mask RCNN model in Detectron2 to detect zone of inhition in antibiogram images.
+    In this final notebook, I used a pretrained Mask RCNN model in Detectron2 to detect and measure zone of inhition in antibiogram images.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -94,10 +96,10 @@ The following image depicts a simplified antibiogram testing process for quick i
     https://www.youtube.com/watch?v=uhRGix-x5Mg<br>
     https://www.immersivelimit.com/tutorials/cutting-out-image-foregrounds-with-gimp<br>
 - Image Sources: 
-    https://www.ecdc.europa.eu/en/publications-data/eucast-instruction-video-reading-inhibition-zone-diameters
-    https://commons.wikimedia.org/wiki/File:Zone_of_Inhibition.jpg
-    https://www.youtube.com/watch?v=-TZn3ie-iFk
-    https://asm.org/getattachment/2594ce26-bd44-47f6-8287-0657aa9185ad/Kirby-Bauer-Disk-Diffusion-Susceptibility-Test-Protocol-pdf.pdf
-    https://en.wikipedia.org/wiki/Disk_diffusion_test
-    http://blog.eoscu.com/blog/what-is-an-antibiogram
-    https://www.tgw1916.net/antibiogram.html
+    https://www.ecdc.europa.eu/en/publications-data/eucast-instruction-video-reading-inhibition-zone-diameters<br>
+    https://commons.wikimedia.org/wiki/File:Zone_of_Inhibition.jpg<br>
+    https://www.youtube.com/watch?v=-TZn3ie-iFk<br>
+    https://asm.org/getattachment/2594ce26-bd44-47f6-8287-0657aa9185ad/Kirby-Bauer-Disk-Diffusion-Susceptibility-Test-Protocol-pdf.pdf<br>
+    https://en.wikipedia.org/wiki/Disk_diffusion_test<br>
+    http://blog.eoscu.com/blog/what-is-an-antibiogram<br>
+    https://www.tgw1916.net/antibiogram.html<br>
