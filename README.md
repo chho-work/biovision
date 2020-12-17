@@ -1,10 +1,8 @@
 # Computer Vision in Microbiology
 
-## Detect Measure & Classify Antibiogram
-### Training Pipeline with Synthetic Images and Mask RCNN
-
-
 ## Overview
+
+**_Detect, measure and classify Antibiogram. A training pipeline with synthetic images and Mask RCNN._**
 
 **Antibiogram Test**, is a widely used tool in microbiology to find the level of [antimicrobial susceptibility](https://en.wikipedia.org/wiki/Disk_diffusion_test).  Part of its process consists of measuring "zone of inhibition"(see below for explanation), which is currently performed by clinicians manually using a ruler or digital calliper.
 
