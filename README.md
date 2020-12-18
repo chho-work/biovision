@@ -11,7 +11,7 @@
 
 In some way this is impractical and prone to error.  For example, the tiny ruler number could lead to misreading. Nevertheless, given the current available computer vision technologies, we are able to improve this measuring process.
 
-![](/data/images/readme/measure_inference.png) 
+![](/data/images/readme/measure_inference.jpg) 
 
 In this repo, I used Deep Learning techniques to detect and measure the "zone of inhibition".  
 
