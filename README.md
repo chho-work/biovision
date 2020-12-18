@@ -20,7 +20,7 @@ In this repo, I used Deep Learning techniques to detect and measure the "zone of
     - **Notebook Name**: [Synthetic_Images_Antibiogram.ipynb](/nb/Synthetic_Images_Antibiogram.ipynb)(Open in Colab!)
     - Download [53 images](https://drive.google.com/file/d/1sIeCJ2YuEzYAexzx-be7Fd7x-CQrFKjt/view?usp=sharing) and [JSON annotation files](https://drive.google.com/file/d/1DZ7YvQS04T0DdkagDsGZsPhFIrj97Z_C/view?usp=sharing) created with this notebook.  I will use them as sample to train Mask RCNN. 
 
-    This first notebook generates synthetic images([more sample here](/data)) for training.  I did not have sufficient real images to use for training.  Therefore, I had to create synthetic images.  This notebook goes through step-by-step on how I pasted foreground and background images into look-alike antibiogram images.  I was also able to create image annotations for segmentation and bbox(COCO format). 
+    This first notebook generates synthetic images([more sample here](/data)) for training.  I created synthetic images due to lack of real images.  This notebook goes through a step-by-step process of how to create synthetic images by pasting foreground and background images into antibiogram look-alike image.  I was also able to create automatically image annotations for segmentation and bbox(COCO format). 
 
 **Note: how to create foreground or background images is not part of the code.  For more information on how to create these images, please refer to the reference section at the end of the repo.**
 
