@@ -11,7 +11,7 @@
 
 In some way this is impractical and prone to error.  For example, the tiny ruler number could lead to misreading. Nevertheless, given the current available computer vision technologies, we are able to improve this measuring process.
 
-![](/data/images/readme/inference_measurement.png) 
+![](/data/images/readme/measure_inference.png) 
 
 In this repo, I used Deep Learning techniques to detect and measure the "zone of inhibition".  
 
@@ -42,7 +42,7 @@ In this repo, I used Deep Learning techniques to detect and measure the "zone of
 
     - **Notebook Name**: [AntimicrobialDisk-Detectron2.ipynb](/nb/AntimicrobialDisk-Detectron2.ipynb)(Open in Colab!)
     
-    In this final notebook, I used a pretrained Mask RCNN model in Detectron2 to detect and measure zone of inhition in antibiogram images.
+    In this third notebook, I used a pretrained Mask RCNN model in Detectron2 to detect and measure zone of inhition in antibiogram images.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
