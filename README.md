@@ -42,7 +42,7 @@ In this repo, I used Deep Learning techniques to detect and measure the "zone of
 ---------------------------------------------------------------------------------------------------------------------------------------------    
 3. Train & Inference w/Mask-RCNN and Detect & Measure Zone of Inhibition: 
 
-    - **Notebook Name**: [AntimicrobialDisk-Detectron2.ipynb](/nb/AntimicrobialDisk-Detectron2.ipynb)(Open in Colab!)
+    - **Notebook Name**: [AntimicrobialDisk-Detectron2.ipynb](https://github.com/chho-work/biovision/blob/main/nb/AntimicrobialDisk_Detectron2.ipynb)(Open in Colab!)
     
     In this third notebook, I used a pretrained Mask RCNN model in Detectron2 to detect and measure zone of inhition in antibiogram images.
 
